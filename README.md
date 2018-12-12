@@ -67,6 +67,16 @@ Hvis du ikke føler at du er den store designer er det helt ok at springe denne 
 
 ## Generelt
 
+For at starte projektet skal du have [NodeJS](https://nodejs.org) og NPM på din maskine. Du kan evt. også installere [Yarn](https://yarnpkg.com/lang/en/).
+
+1. Lav en fork af projektet fra Github og klon filerne ned 
+1. I projektmappen køres `npm install` (eller `yarn install` hvis du har Yarn)
+1. I projektmappen startes web-app'en med `npm start` (eller `yarn start`)
+
+Skriv endelig hvis du har problemer med at komme igang.
+
+## Oprindelig Create React App README følger her
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
