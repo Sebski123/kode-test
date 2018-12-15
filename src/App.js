@@ -16,15 +16,39 @@ class App extends Component {
     }
 
     componentDidMount() {
-        api.getItems().then(items => this.setState({ items }));
+        api.getItems().then(items => this.initValues(items)).then(items => this.setState({ items }));
     }
 
     handleQuantityInc(id) {
         const { items } = this.state;
+        if(items[id-1].quantity < items[id-1].maxQuantity) {
+            items[id-1].quantity ++;
+        }
+        this.setState(items);
     }
 
     handleQuantityDec(id) {
         const { items } = this.state;
+        if(items[id-1].quantity > items[id-1].minQuantity){
+            items[id-1].quantity --;
+        }
+        this.setState(items);
+    }
+
+    initValues(items) {
+        for(let i = 0;i < items.length; i++) {
+            items[i].quantity = items[i].minQuantity;
+        }
+        return items;
+    }
+
+    totalPrice() {
+        const { items } = this.state;
+        let total = 0;
+        for(let i = 0;i < items.length; i++) {
+            total += items[i].quantity * items[i].unitPrice;
+        }
+        return total;
     }
 
     render() {
@@ -56,7 +80,7 @@ class App extends Component {
                     ))}
                     <div className="row totals">
                         <div className="col-sm-3 offset-md-9 text-right">
-                            I ALT {format.formatAmount(0, "DKK")}
+                            I ALT {format.formatAmount(this.totalPrice(), "DKK")}
                         </div>
                     </div>
                 </div>
