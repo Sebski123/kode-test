@@ -2,21 +2,12 @@
 
 Dette projekt indeholder et par mindre kode opgaver:
 
-<<<<<<< HEAD
 1. - [x] **Start og køre web app'en (se hvordan i denne README)**
 1. - [x]**Mulighed for at tilføje og fjerne varer fra listen**
 1. - [x]**Vise varetotal**
 1. - [x]**Formatere beløb på en pæn måde**
 1. - [x]**BONUS: Håndtere hvor mange varer man kan tilføje eller fjerne**
 1. - [ ]**BONUS: Lave siden mere lækker med CSS**
-=======
-1. - [ ] **Start og køre web app'en (se hvordan i denne README)**
-1. **Mulighed for at tilføje og fjerne varer fra listen**
-1. **Vise varetotal**
-1. **Formatere beløb på en pæn måde**
-1. **BONUS: Håndtere hvor updating READMEmange varer man kan tilføje eller fjerne**
-1. **BONUS: Lave siden mere lækker med CSS**
->>>>>>> 8d61fd86ba49c22f2eed1337c5d5953729954f55
 
 ### 1. Start og køre web app'en
 
