@@ -2,7 +2,7 @@
 
 Dette projekt indeholder et par mindre kode opgaver:
 
-1. [ ] **Start og køre web app'en (se hvordan i denne README)**
+1. - [ ] **Start og køre web app'en (se hvordan i denne README)**
 1. **Mulighed for at tilføje og fjerne varer fra listen**
 1. **Vise varetotal**
 1. **Formatere beløb på en pæn måde**
