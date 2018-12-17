@@ -21,16 +21,18 @@ class App extends Component {
 
     handleQuantityInc(id) {
         const { items } = this.state;
-        if(items[id-1].quantity < items[id-1].maxQuantity) {
-            items[id-1].quantity ++;
+        let idx = items.findIndex(item => item.id === id);
+        if(items[idx].quantity < items[idx].maxQuantity) {
+            items[idx].quantity ++;
         }
         this.setState(items);
     }
 
     handleQuantityDec(id) {
         const { items } = this.state;
-        if(items[id-1].quantity > items[id-1].minQuantity){
-            items[id-1].quantity --;
+        let idx = items.findIndex(item => item.id === id);
+        if(items[idx].quantity > items[idx].minQuantity){
+            items[idx].quantity --;
         }
         this.setState(items);
     }

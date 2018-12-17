@@ -2,7 +2,7 @@ export function getItems() {
     return new Promise(function(resolve) {
         const items = [
             {
-                id: 1,
+                id: 10,
                 description: "Ekspeditionsgebyr",
                 quantity: 0,
                 unitPrice: 75.0,
@@ -10,7 +10,7 @@ export function getItems() {
                 maxQuantity: 1
             },
             {
-                id: 2,
+                id: 20,
                 description: "Depositum",
                 quantity: 0,
                 unitPrice: 2000.0,
@@ -18,7 +18,7 @@ export function getItems() {
                 maxQuantity: 1
             },
             {
-                id: 3,
+                id: 30,
                 description: "Linnedpakke",
                 quantity: 0,
                 unitPrice: 89.0,
@@ -26,7 +26,7 @@ export function getItems() {
                 maxQuantity: 10
             },
             {
-                id: 4,
+                id: 40,
                 description: "Slutrengøring",
                 quantity: 0,
                 unitPrice: 798.0,
